@@ -263,12 +263,12 @@ friends[0] = "Munnabai"
 
 console.log(); // next line
 console.log(`Print the elements in a array:`);
-function dataHandling(input){
+function dataHandlin(input){
     for (var i = 0; i < input.length; i++) {
         console.log(input[i]);
     }
 }
-dataHandling(friends);
+dataHandlin(friends);
 
 // 7. Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica
 
@@ -297,9 +297,9 @@ console.log(); // next line
 function isUrFriend(input, name){
     for (var i = 0; i < input.length; i++) {
         if(input[i] === name)
-            return `The name is found`;
+            return `The name is found!! He/She is your friend`;
     }
-    return `The name is not found or check the characters`;
+    return `The name is not found!! He/She is not your friend or check the characters`;
  } 
 let found = isUrFriend(friends,"jeff");
 console.log(found);
@@ -355,7 +355,7 @@ let friendsName = [
 
 // 1. Get the first item, the middle item and the last item of the array
 console.log(`first item of array is---> ${firstItem = friendsName[0]}
-Middle item of array is---> ${secondItem = friendsName[friendsName.length / 2]}
+Middle item of array is---> ${secondItem = friendsName[Math.floor(friendsName.length / 2)]}
 Last item of array is---> ${lastItem = friendsName[friendsName.length - 1]}`);
 
 //2. Add your name to the end of the friends array, and add another name to beginning.
@@ -371,7 +371,7 @@ console.log() //next line;
 function addTitle(name) {
     return "Mr " + name;
 }
-console.log("After Mr or Ms to the names---->");
+console.log("After add Mr or Ms to the names---->");
 console.log(friendsName.map(addTitle));
 
 console.log() //next line;
